@@ -145,6 +145,12 @@ app_license = "mit"
 # 	}
 # }
 
+doc_events = {
+     "*": {
+        "before_save": "pricing_conditions.pricing_conditions.doctype.pricing_structure.pricing_structure.dispatch_pricing_if_needed"
+    }
+}
+
 # Scheduled Tasks
 # ---------------
 
